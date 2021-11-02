@@ -10,3 +10,10 @@ build:
     MIX_ENV: prod
     SECRET_KEY_BASE: $SECRET_KEY_BASE
     DATABASE_URL: $DATABASE_URL
+    PGDATA: /var/lib/postgresql/data/pgdata
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_USER: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+    PGDATABASE: time_manager_dev
+    PGPORT: 5432
+    PGHOST: db
