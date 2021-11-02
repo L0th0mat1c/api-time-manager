@@ -18,4 +18,4 @@ RUN mix deps.get
 
 EXPOSE 4000
 
-# CMD ["./entrypoint.sh"]
+CMD ["./entrypoint.sh"]
