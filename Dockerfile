@@ -17,5 +17,5 @@ RUN mix local.rebar --force
 RUN mix deps.get
 
 EXPOSE 4000
-
+RUN ["chmod", "+x", "./entrypoint.sh"]
 CMD ["./entrypoint.sh"]
