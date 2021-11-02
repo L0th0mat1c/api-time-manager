@@ -10,4 +10,5 @@ build:
     MIX_ENV: prod
     SECRET_KEY_BASE: $SECRET_KEY_BASE
     DATABASE_URL: $DATABASE_URL
-  run: mix phx.server
+run:
+  web: mix phx.server
