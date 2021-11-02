@@ -1,11 +1,6 @@
 # Use an official Elixir runtime as a parent image
 FROM elixir:latest
-ARG POSTGRES_PASSWORD=postgres
-ARG POSTGRES_USER=postgres
-ARG POSTGRES_HOST_AUTH_METHOD= trust
-ARG PGDATABASE= time_manager_dev
-ARG PGPORT= 5432
-ARG PGHOST= db
+
 RUN apt-get update && \
   apt-get install -y postgresql-client
 
